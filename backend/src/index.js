@@ -15,7 +15,7 @@ const PORT = process.env.PORT;
 // app.use(logger);
 app.use(cors(corsOptions));
 
-app.use("/", express.urlencoded({ limit: "30mb", extended: true }));
+app.use("/", express.urlencoded({ limit: "30mb", extended: false }));
 app.use("/", express.json({ limit: "30mb" }));
 
 app.use(cookieParser());
