@@ -22,6 +22,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.10.1",
     "mongoose-sequence": "^6.0.1",
+    "tech_notes-mern": "file:..",
     "uuid": "^11.0.5"
   },
   "devDependencies": {
