@@ -1,0 +1,21 @@
+{
+  "name": "tech_notes-mern",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/abhimanyuspark/tech_notes-mern#readme",
+  "bugs": {
+    "url": "https://github.com/abhimanyuspark/tech_notes-mern/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhimanyuspark/tech_notes-mern.git"
+  },
+  "license": "ISC",
+  "author": "Abhimanyu",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  }
+}

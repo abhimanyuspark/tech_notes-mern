@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0f1a3a;
+  --cl-primary: white;
+
+  /* font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400; */
+
+  color-scheme: light dark;
+  color: white;
+  background-color: var(--bg-primary); /* Equivalent to bg-blue-950 */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+header,
+footer {
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  background: var(--bg-primary);
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 3px;
+  background: radial-gradient(farthest-side, var(--cl-primary) 95%, #0000) 50% 0/12px
+      12px no-repeat,
+    radial-gradient(
+        farthest-side,
+        #0000 calc(100% - 5px),
+        var(--cl-primary) calc(100% - 4px)
+      )
+      content-box;
+  animation: l6 2s infinite;
+}
+@keyframes l6 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+option {
+  color: black;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
